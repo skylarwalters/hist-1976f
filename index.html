@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIST 1976F</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+        <nav class="section-nav" aria-label="Section navigation">
+          <a href="#background" class="nav-link">Background</a>
+          <a href="#methods" class="nav-link">Methods</a>
+          <a href="#results" class="nav-link">Results</a>
+          <a href="#discussion" class="nav-link">Discussion</a>
+        </nav>
+      
+      </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <h1>A Natural Language Analysis of American Environmental Legislation, 1973-2025
+    </h1>
+      <p>
+        Skylar Sargent Walters | HIST 1976F
+      </p>
+    </section>
+
+    <section class="scrolly" aria-label="Scroll-driven history story">
+      <div class="scrolly-visual">
+        <div class="visual-panel">
+          <article class="visual-item active" data-visual="0">
+            <div class="visual-media">
+              <img
+                src="https://picsum.photos/seed/roman-senate/1200/900"
+                alt="Illustrative historical scene placeholder"
+                width="1200"
+                height="900"
+                loading="lazy"
+              />
+            </div>
+            <div class="visual-caption">
+              <span class="label">Context</span>
+              <h2>Rome under strain</h2>
+              <p>Use this area for images, maps, portraits, timelines, or even embedded charts.</p>
+            </div>
+          </article>
+
+          <article class="visual-item" data-visual="1">
+            <div class="visual-media">
+              <img
+                src="https://picsum.photos/seed/caesar/1200/900"
+                alt="Illustrative historical scene placeholder"
+                width="1200"
+                height="900"
+                loading="lazy"
+              />
+            </div>
+            <div class="visual-caption">
+              <span class="label">Turning point</span>
+              <h2>Power concentrates</h2>
+              <p>Each step can swap the visual, update the caption, and animate in place.</p>
+            </div>
+          </article>
+
+          <article class="visual-item" data-visual="2">
+            <div class="visual-media">
+              <img
+                src="https://picsum.photos/seed/civil-war/1200/900"
+                alt="Illustrative historical scene placeholder"
+                width="1200"
+                height="900"
+                loading="lazy"
+              />
+            </div>
+            <div class="visual-caption">
+              <span class="label">Conflict</span>
+              <h2>Civil war reshapes Rome</h2>
+              <p>You can replace this with scanned documents, battle maps, or archival photos.</p>
+            </div>
+          </article>
+
+          <article class="visual-item" data-visual="3">
+            <div class="visual-media">
+              <img
+                src="https://picsum.photos/seed/augustus/1200/900"
+                alt="Illustrative historical scene placeholder"
+                width="1200"
+                height="900"
+                loading="lazy"
+              />
+            </div>
+            <div class="visual-caption">
+              <span class="label">Aftermath</span>
+              <h2>Republic to empire</h2>
+              <p>The final panel can resolve the story and connect back to your thesis.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="scrolly-steps">
+        <section class="step active" data-step="0">
+
+            <section id="background" class="step" data-step="0">
+                <div class="step-card">
+                  <h3>Introduction</h3>
+                  <p>American environmentalism has never been a single, stable project. Since the early 1970s, popular U.S. environmental politics has travelled between cleaning up spectacular pollution events and wilderness protection to technocratic regulation, to market-based climate policy, ideas of language of justice, resilience, and transition. Across that half-century, activists, agencies, and legislators have repeatedly redefined what “the environment” is about: the animals, the air, the water, the corporations, or the people? 
+                </p>
+                </div>
+              </section>
+
+        </section>
+
+        <section class="step active" data-step="1">
+          
+            <section class="step" data-step="1">
+                <div class="step-card">
+                  <p>A central challenge is that the legal record of this movement is vast and uneven. The period from 1973–2025 contains landmark statutes, minor amendments, and bills where environmental provisions are buried alongside unrelated policies. Traditional qualitative approaches tend to gravitate toward well-known laws such as the Clean Air Act or the Endangered Species Act. As a result, our historical narratives about American environmentalism often rest on selectively sampled texts, rather than a systematic view of how the language of environmental governance has evolved across the entire federal statutory landscape.
+                </p>
+                </div>
+              </section>
+
+        </section>
+
+        <section class="step active" data-step="2">
+          
+            <section class="step" data-step="2">
+                <div class="step-card">
+                  <p>Natural Language Processing (NLP) is a branch of artificial intelligence and computational linguistics that enables computers to represent, analyze, and derive meaning from human language in text or speech form. By treating environmental laws as a large text corpus, NLP methods can quantify how certain themes, for example, pollution control, risk management, climate mitigation, adaptation, or environmental justice, change in statutory language over time. Rather than replacing close reading, NLP provides a complementary, corpus-level view: it surfaces patterns and turning points in the language of American environmentalism that can then be interpreted in light of social movements, scientific developments, and political change. In this project, I use NLP to follow those linguistic shifts through federal environmental legislation from 1973 to 2025, asking how the movement's priorities and imagined publics are inscribed in law.
+                </p>
+                </div>
+              </section>
+
+        </section>
+
+        <section class="step" data-step="3">
+            <section id="methods" class="step" data-step="3">
+                <div class="step-card">
+                    <h4>Natural Language Processing</h4>
+                    <p>Natural Language Processing (NLP) is a field at the intersection of computer science, linguistics, and machine learning that focuses on building computational methods to represent and analyze human language as data. In practice, NLP techniques transform unstructured text (here, laws) into numerical representations that algorithms can search, cluster, and classify at scale. For policy research, it enables us to build on close reading of a handful of documents to systematic analysis of thousands of pages of legal text.
+                    </p>
+                </div>
+              </section>
+        </section>
+
+        <section class="step" data-step="3">
+          
+        </section>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Skylar Sargent Walters</p>
+      <p>HIST 1976F</p>
+    </footer>
+  </main>
+
+  <script>
+    const steps = [...document.querySelectorAll('.step')];
+    const visuals = [...document.querySelectorAll('.visual-item')];
+    const progressBar = document.getElementById('progressBar');
+    const themeToggle = document.querySelector('[data-theme-toggle]');
+    const root = document.documentElement;
+
+    function setActiveStep(index) {
+      steps.forEach((step, i) => {
+        step.classList.toggle('active', i === index);
+      });
+
+      visuals.forEach((visual, i) => {
+        visual.classList.toggle('active', i === index);
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = Number(entry.target.dataset.step);
+          setActiveStep(index);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.55
+    });
+
+    steps.forEach(step => observer.observe(step));
+
+    function updateProgress() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = `${progress}%`;
+    }
+
+    updateProgress();
+    window.addEventListener('scroll', updateProgress, { passive: true });
+
+    (function () {
+      let currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', currentTheme);
+
+      function renderIcon() {
+        themeToggle.innerHTML = currentTheme === 'dark' ? '<span aria-hidden="true">☀</span>' : '<span aria-hidden="true">☾</span>';
+        themeToggle.setAttribute(
+          'aria-label',
+          currentTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+        );
+      }
+
+      renderIcon();
+
+      themeToggle.addEventListener('click', () => {
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', currentTheme);
+        renderIcon();
+      });
+    })();
+  </script>
+</body>
+</html>
