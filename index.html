@@ -1,865 +1,372 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HIST 1976F</title>
-
+  <meta name="description" content="Full-page editorial research website with stacked text pages that scroll upward to reveal images underneath." />
+  <title>Research Story Site</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-
-  <div class="progress" aria-hidden="true">
-    <div class="progress-bar" id="progressBar"></div>
-  </div>
-
   <header class="site-header">
     <div class="header-inner">
-        <nav class="section-nav" aria-label="Section navigation">
-          <div class="nav-item has-dropdown">
-            <a href="#background" class="nav-link">Background</a>
-      
-            <ul class="dropdown-menu" aria-label="Background subsections">
-              <li><a href="#TEP" class="dropdown-link">Tracing American Environmental Policy</a></li>
-              <li><a href="#Natural-Language-Processing" class="dropdown-link">Natural Language Processing</a></li>
-              <li><a href="#nlp-in-env" class="dropdown-link">NLP in Environmental Policy</a></li>
-            </ul>
 
-          </div>
+      <nav class="toolbar" aria-label="Section navigation">
+        <a href="#background">Background</a>
+        <a href="#methods">Methods</a>
+        <a href="#results">Results</a>
+        <a href="#discussion">Discussion</a>
 
-          <div class="nav-item has-dropdown">
-            <a href="#methods" class="nav-link">Methods</a>
-            
-            <ul class="dropdown-menu" aria-label="Background subsections">
-                <li><a href="#methods" class="dropdown-link">Corpus Design</a></li>
-                <li><a href="#topic-modelling" class="dropdown-link">Topic Modelling</a></li>
-                <li><a href="#word2vec" class="dropdown-link">Word2Vec</a></li>
-            </ul>
-
-          </div>
-
-          <div class="nav-item has-dropdown">
-            <a href="#results" class="nav-link">Results</a>
-            
-            <ul class="dropdown-menu" aria-label="Background subsections">
-                <li><a href="#word-freq" class="dropdown-link">Word Frequency</a></li>
-                <li><a href="#topics" class="dropdown-link">Topic Modelling</a></li>
-                <li><a href="#assoc" class="dropdown-link">Word Associations</a></li>
-            </ul>
-
-          </div>
-      
-          <a href="#discussion" class="nav-link">Discussion</a>
-        </nav>
-      
-      </div>
+      </nav>
+    </div>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <h1>A Natural Language Analysis of American Environmental Legislation, 1973-2025
-    </h1>
-      <p>
-        Skylar Sargent Walters | HIST 1976F
-      </p>
+  <main id="content">
+    <section class="intro-panel">
+      
+        
+        <div class="panel-sheet-wrap">
+          <article class="panel-sheet">
+            <div class="sheet-content">
+              <h1>A Natural Language Analysis of American Environmental Legislation, 1973-2025</h1>
+              <p> American environmentalism has never been a single, stable project. Since the early 1970s, popular U.S. environmental politics has travelled between cleaning up spectacular pollution events and wilderness protection to technocratic regulation, to market-based climate policy, ideas of language of justice, resilience, and transition. Across that half-century, activists, agencies, and legislators have repeatedly redefined what “the environment” is about: the animals, the air, the water, the corporations, or the people. 
+              </p>
+            </div>
+          </article>
+        </div>
+      
     </section>
 
-    <section class="scrolly">
-      <div class="scrolly-visual">
-        <div class="visual-panel">
-          <article class="visual-item active" data-visual="0">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="PLACEHOLDER"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label"></span>
-              <h2>this will be a wordcloud</h2>
-              <p></p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="1">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label placehold</span>
-              <h2>title</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="2">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label placehold</span>
-              <h2>title</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="3">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label</span>
-              <h2>title</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="4">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>title</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="5">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>title</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="6">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>title</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="7">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>visual describing the accession of bills for the corpus</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="8">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>This will be a visual describing the steps of word preproc</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="9">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>This will explain tf-idf/topic modelling</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="10">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>This will explain tf-idf/topic modelling (a second time)</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-
-          <article class="visual-item" data-visual="11">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>word2vec visual</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="12">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>This will explain word2vec (a second time)</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-
-          <article class="visual-item" data-visual="13">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>this will show hwo you compare word2vec embeddings</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-
-          <article class="visual-item" data-visual="14">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>this will show the first visual of word frequency over time</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="15">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>and this will show the second</h2>
-              <p>caption</p>
-            </div>
-          </article>
-
-          <article class="visual-item" data-visual="16">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>For each term of interest, there will be a figure at left that 
-                shows its changing context over time. 
-              </h2>
-              <p>caption</p>
-            </div>
-
-          </article>
-
-          <article class="visual-item" data-visual="17">
-            <div class="visual-media">
-              <img
-                src="/images/semantic-space.png"
-                alt="placeholder"
-                width=100%
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>
-                placeholder for word similarity result figures 
-              </h2>
-              <p>caption</p>
-            </div>
-            
-          </article>
-
-          <article class="visual-item" data-visual="18">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>
-                placeholder for word similarity result figures 
-              </h2>
-              <p>caption</p>
-            </div>
-            
-          </article>
-
-          <article class="visual-item" data-visual="19">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>
-                placeholder for word similarity result figures 
-              </h2>
-              <p>caption</p>
-            </div>
-            
-          </article>
-
-          <article class="visual-item" data-visual="20">
-            <div class="visual-media">
-              <img
-                src=""
-                alt="placeholder"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-            </div>
-            <div class="visual-caption">
-              <span class="label">label again</span>
-              <h2>
-                placeholder for word similarity result figures 
-              </h2>
-              <p>caption</p>
-            </div>
-            
-          </article>
-
-
-
+    <section id="background" class="story-panel">
+      <div class="panel-image-layer" aria-hidden="true">
+        <div class="panel-image background-art"></div>
+        <div class="panel-image-layer" aria-hidden="true">
+          <div class="panel-image hero-art"></div>
+         
         </div>
       </div>
+      <div class="panel-sheet-wrap">
+        <article class="panel-sheet">
+          <div class="sheet-content">
+            <h3>Background</h3>
 
-      <div class="scrolly-steps">
-        <section class="step active" data-step="0">
-
-            <section id="background" class="step" data-step="0">
-                <div class="step-card">
-                  <h3>Introduction</h3>
-                  <p>American environmentalism has never been a single, stable project. Since the early 1970s, popular U.S. environmental politics has travelled between cleaning up spectacular pollution events and wilderness protection to technocratic regulation, to market-based climate policy, ideas of language of justice, resilience, and transition. Across that half-century, activists, agencies, and legislators have repeatedly redefined what “the environment” is about: the animals, the air, the water, the corporations, or the people? 
-                </p>
-                </div>
-              </section>
-
-        </section>
-
-        <section class="step active" data-step="1">
-          
-            <section class="step" data-step="1">
-                <div class="step-card">
-                  <p>A central challenge is that the legal record of this movement is vast and uneven. The period from 1973–2025 contains landmark statutes, minor amendments, and bills where environmental provisions are buried alongside unrelated policies. Traditional qualitative approaches tend to gravitate toward well-known laws such as the Clean Air Act or the Endangered Species Act. As a result, our historical narratives about American environmentalism often rest on selectively sampled texts, rather than a systematic view of how the language of environmental governance has evolved across the entire federal statutory landscape.
-
-                </p><br>
-                <p>
-                    Natural Language Processing (NLP) is a branch of artificial intelligence and computational linguistics that enables computers to represent, analyze, and derive meaning from human language in text or speech form. By treating environmental laws as a large text corpus, NLP methods can quantify how certain themes, for example, pollution control, risk management, climate mitigation, adaptation, or environmental justice, change in statutory language over time. Rather than replacing close reading, NLP provides a complementary, corpus-level view: it surfaces patterns and changes in the language of American environmentalism that can then be interpreted in light of social movements, scientific developments, and political change.
-                </p>
-                </div>
-              </section>
-
-        </section>
-
-        <section class="step active" data-step="2">
-          
-            <section id="TEP" class="step" data-step="2">
-                <div class="step-card">
-                    <h4>Tracing American Environmental Policy</h4>
-                  <p>
-                    Early accounts of U.S. environmental policy describe its place as the“environmental decade,” during which federal statutes like the Clean Air Act, Clean Water Act, and Safe Drinking Water Act were passed. It was an era of bipartisan, environmentalism: Congress constructed a relatively centralized regulatory state, gave EPA broad authority, and adopted ambitious goals such as “productive and enjoyable harmony” between humans and nature. In 1973, the US was faced with the OPEC oil embargo, bringing the nation’s supply to a trickle. As a result, Nixon’s administration began seeking greater domestic oil and gas reserves to prevent future crises, leading to clashes between environmentalists and the administration. Scholars note that this first wave focused heavily on visible, point‑source pollution and on the protection of air, water, and iconic natural resources, with less systematic attention to distributional questions or long‑term climate risks.  
-                  </p>
-
-                  <br>
-                  <p>
-                    By the late 1970s and 1980s, the federal government continued to legislate on emerging issues such as hazardous waste and toxic substances— CERCLA is a canonical example— but at the same time, administrations sought to constrain regulatory expansion through budget cuts, tighter oversight of EPA, and new requirements for regulatory impact analysis. Researchers in this period document a broadening of environmental concern from classic air and water pollution toward toxic wastes, ocean dumping, and land-use planning, while also tracing how economic efficiency arguments and “regulatory reform” politics reshaped the terms on which environmental protection was debated.
-                  </p>
-                
-                </div>
-              </section>
-
-        </section>
-
-        <section class="step active" data-step="3">
-          
-            <section class="step" data-step="3">
-                <div class="step-card">
-                  
-                    <p>
-                        From the 1990s onward, a third wave of law stresses the fragmentation and diversification of environmental policy, including the growing prominence of climate change, sustainability, and environmental justice. Scholars argue that environmental governance became more multi‑level and issue‑specific, with market‑based instruments (such as emissions trading) supplementing or partially displacing traditional command‑and‑control regulation. Meanwhile, environmental justice advocates and public health researchers pushed questions of distribution and equity onto the federal agenda, leading to new frameworks for integrating environmental justice into regulatory analysis and permitting and to an expanding body of legislation and guidance. 
-                    </p>
-                    <br>
-                    <p>
-                        In the 2000s and 2010s, U.S. environmnetal policy was increasingly structured around energy and climate, as well as environmental justice and equity. However, this came at the cost of strong partisanship, particularly into the 2010s. Following the Trump administration’s rolling back of numerous regulations and the withdrawal from the Paris Agreement, states, cities, tribes, and private actors increasingly positioned themselves as climate and environmental leaders. By the early 2020s, with the Biden administration’s climate agenda, the Inflation Reduction Act, and initiatives like Justice40 and new environmental justice executive orders, scholars and advocates increasingly describe U.S. environmental policy as a field where climate mitigation, infrastructure investment, and justice concerns are formally linked, even as implementation remains uneven and heavily mediated by state and local capacity.
-                    </p>
-                </div>
-              </section>
-
-        </section>
-
-        <section class="step active" data-step="4">
-          
-            <section class="step" data-step="4">
-                <div class="step-card">
-                  
-                    <p>
-                        Critically, almost no issue can be defined as taking place entirely in one time period. Environmental justice, for example, became a mainstream perspective in popular environmnetalism in recent years. However, its terminology dates back to the 1983 Warren County Protests agasint PCB, and is exemplified in even earlier movements, such as in West Harlem’s protests against a sitting sewage treatment plant. Defining an entire decade by trends in its federal policy erases local work, but also overwrites the nuances across conservation interests. Still, some issues are fairly rooted in time: take, for example, depletion of the ozone layer. Ungar 2003 discusses the cultural presence of the ozone layer in the 1980s and 1990s due to its “digestible” nature, as well as its subsequent disappearance due to the effective Montreal Protocol. Thus, discussion of this topic in legislation would likely change, or disappear altogether outside of this two-decade span.                        
-                    </p>
-                    <br>
-                    <p>
-                        For this project, periodization provides a conceptual scaffold: NLP methods can be used to test and refine these narratives by tracking when the language associated with conservation, risk, markets, climate, and justice rises and falls in statutory text, rather than assuming sharp breaks at familiar political milestones.
-                    </p>
-
-
-                </div>
-              </section>
-
-        </section>
-
-
-
-
-        <section class="step active" data-step="5">
-          
-            <section id="Natural-Language-Processing" class="step" data-step="5">
-                <div class="step-card">
-                    <h4>Natural Language Processing</h4>
-                    <p>
-                        Natural Language Processing (NLP) is a field at the intersection of computer science, linguistics, and machine learning that focuses on building computational methods to represent and analyze human language as data. In practice, NLP techniques transform unstructured text (in this project, laws) into numerical representations that algorithms can cluster and classify at scale. For policy research, it enables us to build on close reading of a handful of documents to systematic analysis of thousands of pages of legal text.
-                    </p>
-
-                </div>
-              </section>
-
-        </section>
-
+            <p>
+              A central challenge is that the legal record of this movement is vast and uneven. The period from 1973–2025 contains landmark statutes, minor amendments, and bills where environmental provisions are buried alongside unrelated policies. Traditional qualitative approaches tend to gravitate toward well-known laws such as the Clean Air Act or the Endangered Species Act. As a result, our historical narratives about American environmentalism often rest on selectively sampled texts, rather than a systematic view of how the language of environmental governance has evolved across the entire federal statutory landscape.
+            </p>
 
+            <p>
+              Natural Language Processing (NLP) is a branch of artificial intelligence and computational linguistics that enables computers to represent, analyze, and derive meaning from human language in text or speech form. By treating environmental laws as a large text corpus, NLP methods can quantify how certain themes, for example, pollution control, risk management, climate mitigation, adaptation, or environmental justice, change in statutory language over time. Rather than replacing close reading, NLP provides a complementary, corpus-level view: it surfaces patterns and changes in the language of American environmentalism that can then be interpreted in light of social movements, scientific developments, and political change.
 
-        <section class="step active" data-step="6">
-          
-            <section id="nlp-in-env" class="step" data-step="6">
-                <div class="step-card">
-                    <h4>NLP in Environmental Policy
-                    </h4>
-                    <p>
-                        NLP is increasingly applied to environmental policy as a means of handling the volume and complexity of relevant text. One prominent line of work uses NLP pipelines to speed up and standardize the identification and classification of policies. Given a large collection of legal documents, these pipelines can scrape text, then either classify documents into predefined categories (e.g., “climate mitigation policy,” “adaptation plan,” “land restoration incentive”) or discover latent topics using unsupervised methods. This has been used, for example, to separate climate‑relevant policies that may be hidden in broader legislative corpora, to catalogue the types of incentives used in land‑restoration schemes, and to map how often different instruments such as tax credits, standards, subsidies, informational tools, are mentioned in policy texts. Thus, these algorithms do not claim to “understand” the law, but rather quickly surface patterns and candidate documents that would otherwise be missed or take weeks of manual screening.
-                        <br><br>
-                        In more recent years, there is a growing interest in using NLP  to evaluate policy in relation to broader sustainability goals. Here, NLP‑derived features, such as topics, sentiments, or target references, can be linked to external indicators such as emissions trends, investment flows, or progress on climate and biodiversity commitments. This allows researchers to ask whether jurisdictions whose legislation leans heavily on certain themes (ex., market mechanisms, resilience, justice) behave differently in measurable ways, or whether policy language and material outcomes have come apart.                    
-                        <br><br>
-                        In this project, we employ two NLP techniques for legislative exploration: topic modelling and word embedding. These enable us to examine trends in language between years, as well as how meaning develops across time. 
-                    </p>
-
-                </div>
-              </section>
-
-        </section>
-
-        <section class="step active" data-step="7">
-          
-            <section id="methods" class="step" data-step="7">
-                <div class="step-card">
-                    <h3>Methods</h3>
-                    <h4>Corpus Design
-                    </h4>
-                    <p>
-                        Natural language processing requires a text corpus on which to train the linguistic data. To do this, I used <a href="https://www.congress.gov/">congress.gov</a>'s web API to access full-text lesgislation. These data must be comprehensive; anything not included in the datset will not be accounted for in the analsysis. Therefore, I used the following metrics to pull all relevant legislation that pertained to environmentalism:
-                    </p>
-                    <br>
-                    <p>
-                        1. Type: legislation<br>
-                        2. Congress: all<br>
-                        3. Status of legislation: Became Law<br>
-                        4. Policy area: Environmental Policy<br>
-                    </p>
-                    <p>
-                        This search yielded 214 bills passed between 1973 to 2025. Notably, this congressional record did not include bills before 1973, thus resulting in somewhat of a blind spot in early 1970s legislation. The full list of federal legislation can be accessed <a href="https://github.com/skylarwalters/hist-1976f/blob/main/code/Legislation.xlsx">here</a>. 
-                    </p>
-
-                </div>
-              </section>
-
-        </section>
-
-        <section class="step active" data-step="8">
-            <section class="step" data-step="8">
-                <div class="step-card">
-                    <p>
-                        These texts then needed to be processed for language-learning. Until 1983, these documents were stored as pdf forms in two columns, one that is an annotation and one that is body text. This was a key issue in creating the text, as differentiating between the main text and annotations is an open question in the world of text mining. However, by matching these columns to Regex (“regular expressions”) that followed the rough column format, I was able to clean these annotations. After 1983, the text was stored as htm files, which did not face the same problem of column-cleaning. 
-                    </p>
-                    <p>
-                        To make the text usable in an NLP context, we further had to process individual words. This included:
-                    </p>
-                    <br>
-                    <p>
-                        1. Removing punctuation
-                        <br>
-                        2. Separating conjunctions into their constituent words 
-                        <br>
-                        3. Removing “stop words,” or high-frequency, low-meaning words (ex. And, in, the, an, at, a)
-                        <br>
-                        4. Stemming words, or creating a consistent grammatical form (ex. Bike, biking, biked all become bik)
-                        <br>
-                        5. Lemmatizing, a more “refined” stemming, that creates a common grammatical form that considers context (e.x., "saw" as a noun stays "saw", but as a verb becomes "see")
-
-                    </p>
-                    <p>
-                        These preprocessing steps make text more uniform such that NLP models can recognize patterns in meaning instead of being distracted by surface-level differences like punctuation. They also reduce sparsity in the data by collapsing many grammatical variants and filler words into a smaller, more informative vocabulary, which improves statistical reliability and model performance. Finally, operations like stemming and lemmatization group together words that express the same underlying concept, so that classifiers track ideas (bike/biking/biked) rather than treating every inflected form as unrelated.
-                    </p>
-
-                </div>
-              </section>
-
-        </section>
-
-        
-
-        <section class="step active" data-step="9">
-            <section id="topic-modelling" class="step" data-step="9">
-                <div class="step-card">
-                    <h4>TF-IDF and Topic Modelling</h4>
-                    
-                    <p>
-                        The core of NLP is vectorizing language; in other words, creating numberical representations of words, sentences, or documents.
-                    </p>
-                    <br>
-                    <p>
-                        Term frequency-inverse document frequency (TF-IDF) is a classical method for making documents into numerical vectors by weighing words according to how often they appear in a document (term frequency) and how rare it is across all documents in a corpus (inverse document frequency). Thus, if a word is frequent in a given text but rare in others, then it will recieve a high TF-IDF score. This is repeated for all words in the corpus vocabulary, creating a numerical vector representation of a document by capturing its distinctive language. 
-                    </p>
-
-                </div>
-              </section>
-
-        </section>
-
-
-        <section class="step active" data-step="10">
-            <section id="topic-modelling" class="step" data-step="10">
-                <div class="step-card">
-                    
-                    <p>
-                        These vectors can then be used to conduct topic modelling, where a model attempts to discover latent “topics” across documents by looking at word co-occurrence. Algorithms such as Latent Dirichlet Allocation (LDA) treat each document as a mixture of a small number of topics and each topic as a distribution over words, allowing you to summarize large corpora in terms of interpretable themes (for example, “pollution control,” “climate mitigation,” “environmental justice”) and quantify how strongly each document expresses each theme.
-                    </p>
-
-                </div>
-              </section>
-
-        </section>
-
-
-        <section class="step active" data-step="11">
-            <section id="word2vec" class="step" data-step="11">
-                <div class="step-card">
-                    <h4>Word2Vec</h4>
-                    
-                    <p>
-                        While TF-IDF is built on representing documents as vectors, word2vec learns vector representations, or “embeddings,” for words based on interpreted meaning. This requires training on a large text corpora, during which the model “learns” similar words, then predicting a word from its immediatly surrounding context. 
-                    </p>
-
-                </div>
-              </section>
-
-        </section>
-
-        <section class="step active" data-step="12">
-            <section class="step" data-step="12">
-                <div class="step-card">
-                    
-                    <p>
-                        This representation is distributional: words that appear in similar contexts end up with similar vectors in a high‑dimensional space, so geometric closeness encodes semantic and syntactic similarity. Because these embeddings capture regularities in language, simple vector arithmetic can reflect analogies (for example, the classic observation that the vector for “king” minus “man” plus “woman” lands near “queen”), which illustrates how relational meaning is encoded in the learned space.
-                    </p>
-
-                </div>
-              </section>
-
-        </section>
-
-        <section class="step active" data-step="13">
-            <section class="step" data-step="13">
-                <div class="step-card">
-                    <p>
-                        After training a word2vec model, you can compare embeddings for words across documents, or, in this case, years. Since similarity correlates to geometry, we can compute distances (e.g., cosine similarity) between two vectors to see how closely-related they are in the semantic space. In this project, I use these comparisons to quantify how concepts cluster—say, whether “market,” “climate,” and “innovation” are near each other— and track whether words like “communities,” “equity,” or “resilience” move toward different associations over time.
-                    </p>
-                </div>
-              </section>
-        </section>
-
-
-        <section class="step active" data-step="14">
-            <section id="results" class="step" data-step="14">
-                <div id="word-freq" class="step-card">
-                    <h3>
-                        Results
-                    </h3>
-                    <h4>
-                        Word Frequencies
-                    </h4>
-                    <p>
-                      This section is currently incomplete. Here, I will be comparing the frequency of different word tokens between years, tracking how certain words shift in frequency across time. 
-                    </p>
-                </div>
-              </section>
-        </section>
-
-        <section class="step active" data-step="15">
-            <section class="step" data-step="15">
-                <div class="step-card">
-                  <p>
-                    I am planning to investigate the following terms: ozone, acid/acid rain, climate change, global warming, oil, pipeline, personal, human, biodiversity, justice/environmental justice, and community.
-                  </p>
-                </div>
-              </section>
-        </section>
-
-        <section class="step active" data-step="16">
-            <section id="topics" class="step" data-step="16">
-                <div class="step-card">
-                    <h4>
-                        Topic Modelling
-                    </h4>
-                    <p>
-                       This section is also still in progress, but I have results for the NEXT section!
-                    </p>
-                </div>
-              </section>
-        </section>
-
-
-        <section class="step active" data-step="17">
-            <section id="assoc" class="step" data-step="17">
-                <div class="step-card">
-                    <h4>
-                        Word Embedding
-                    </h4>
-                    <p>
-                      To track the shifting meaning and role of different words, I computed the closest nighbors in the semantic space.
-                    </p>
-                </div>
-              </section>
-        </section>
-
-
-
-        <section class="step active" data-step="18">
-            <section class="step" data-step="18">
-                <div class="step-card">
-                    <h4>
-                        Word Embedding
-                    </h4>
-                </div>
-            </section>
-        </section>
-
-
-
-
-
-
-
-
-
-
-        
-
-        <section class="step active" data-step="19">
-            <section id="discussion" class="step" data-step="19">
-                <div class="step-card">
-                    <h3>
-                        Discussion
-                    </h3>
-                </div>
-              </section>
-        </section>
+            </p>
 
+            <br>
+            <h3>
+              Tracing American Environmental Policy 
 
+            </h3>
+            
+            <p>
+              Early accounts of U.S. environmental policy describe its place as the“environmental decade,” during which federal statutes like the Clean Air Act, Clean Water Act, and Safe Drinking Water Act were passed. It was an era of bipartisan, environmentalism: Congress constructed a relatively centralized regulatory state, gave EPA broad authority, and adopted ambitious goals such as “productive and enjoyable harmony” between humans and nature. In 1973, the US was faced with the OPEC oil embargo, bringing the nation’s supply to a trickle. As a result, Nixon’s administration began seeking greater domestic oil and gas reserves to prevent future crises, leading to clashes between environmentalists and the administration. Scholars note that this first wave focused heavily on visible, point‑source pollution and on the protection of air, water, and iconic natural resources, with less systematic attention to distributional questions or long‑term climate risks.  
 
+            </p>
+            <p>
+              By the late 1970s and 1980s, the federal government continued to legislate on emerging issues such as hazardous waste and toxic substances— CERCLA is a canonical example— but at the same time, administrations sought to constrain regulatory expansion through budget cuts, tighter oversight of EPA, and new requirements for regulatory impact analysis. Researchers in this period document a broadening of environmental concern from classic air and water pollution toward toxic wastes, ocean dumping, and land-use planning, while also tracing how economic efficiency arguments and “regulatory reform” politics reshaped the terms on which environmental protection was debated.
 
+            </p>
+            <p>
+              From the 1990s onward, a third wave of law stresses the fragmentation and diversification of environmental policy, including the growing prominence of climate change, sustainability, and environmental justice. Scholars argue that environmental governance became more multi‑level and issue‑specific, with market‑based instruments (such as emissions trading) supplementing or partially displacing traditional command‑and‑control regulation. Meanwhile, environmental justice advocates and public health researchers pushed questions of distribution and equity onto the federal agenda, leading to new frameworks for integrating environmental justice into regulatory analysis and permitting and to an expanding body of legislation and guidance. 
+
+            </p>
+            <p>
+              In the 2000s and 2010s, U.S. environmental policy was increasingly structured around energy and climate, as well as environmental justice and equity. However, this came at the cost of strong partisanship, particularly into the 2010s. Following the Trump administration’s rolling back of numerous regulations and the withdrawal from the Paris Agreement, states, cities, tribes, and private actors increasingly positioned themselves as climate and environmental leaders. By the early 2020s, with the Biden administration’s climate agenda, the Inflation Reduction Act, and initiatives like Justice40 and new environmental justice executive orders, scholars and advocates increasingly describe U.S. environmental policy as a field where climate mitigation, infrastructure investment, and justice concerns are formally linked, even as implementation remains uneven and heavily mediated by state and local capacity.
+
+            </p>
+            <p>
+              Critically, almost no issue can be defined as taking place entirely in one time period. Environmental justice, for example, became a mainstream perspective in popular environmentalism in recent years. However, its terminology dates back to the 1983 Warren County Protests against PCB, and is exemplified in even earlier movements, such as in West Harlem’s protests against a sitting sewage treatment plant. Defining an entire decade by trends in its federal policy erases local work, but also overwrites the nuances across conservation interests. Still, some issues are fairly rooted in time: take, for example, depletion of the ozone layer. Ungar 2003 discusses the cultural presence of the ozone layer in the 1980s and 1990s due to its “digestible” nature, as well as its subsequent disappearance due to the effective Montreal Protocol. Thus, discussion of this topic in legislation would likely change, or disappear altogether outside of this two-decade span.
+
+            </p>
+
+            <p>
+              For this project, periodization provides a conceptual scaffold: NLP methods can be used to test and refine these narratives by tracking when the language associated with conservation, risk, markets, climate, and justice rises and falls in statutory text, rather than assuming sharp breaks at familiar political milestones.
+
+            </p>
+
+            <br>
+            <img src="images/nlp_applied.png" width="80%">
+            <br>
+
+            <h3>Natural Language Processing</h3>
+            <p>
+              Natural Language Processing (NLP) is a field at the intersection of computer science, linguistics, and machine learning that focuses on building computational methods to represent and analyze human language as data. In practice, NLP techniques transform unstructured text (in this project, laws) into numerical representations that algorithms can cluster and classify at scale. For policy research, it enables us to build on close reading of a handful of documents to systematic analysis of thousands of pages of legal text.
+            </p>
+
+            <p>
+              NLP is increasingly applied to environmental policy as a means of handling the volume and complexity of relevant text. One prominent line of work uses NLP pipelines to speed up and standardize the identification and classification of policies. Given a large collection of legal documents, these pipelines can scrape text, then either classify documents into predefined categories (e.g., “climate mitigation policy,” “adaptation plan,” “land restoration incentive”) or discover latent topics using unsupervised methods. This has been used, for example, to separate climate‑relevant policies that may be hidden in broader legislative corpora, to catalogue the types of incentives used in land‑restoration schemes, and to map how often different instruments such as tax credits, standards, subsidies, informational tools, are mentioned in policy texts. Thus, these algorithms do not claim to “understand” the law, but rather quickly surface patterns and candidate documents that would otherwise be missed or take weeks of manual screening.
+
+            </p>
+
+            <p>
+              In more recent years, there is a growing interest in using NLP  to evaluate policy in relation to broader sustainability goals. Here, NLP‑derived features, such as topics, sentiments, or target references, can be linked to external indicators such as emissions trends, investment flows, or progress on climate and biodiversity commitments. This allows researchers to ask whether jurisdictions whose legislation leans heavily on certain themes (ex., market mechanisms, resilience, justice) behave differently in measurable ways, or whether policy language and material outcomes have come apart. 
+
+            </p>
+            <p>
+              In this project, we employ two NLP techniques for legislative exploration: topic modelling and word embedding. These enable us to examine trends in language between years, as well as how meaning develops across time. 
+
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <footer class="footer">
-      <p>Skylar Sargent Walters</p>
-      <p>HIST 1976F</p>
-    </footer>
+    <section id="methods" class="story-panel">
+      <div class="panel-image-layer" aria-hidden="true">
+        <div class="panel-image methods-art"></div>
+       
+      </div>
+      <div class="panel-sheet-wrap">
+        <article class="panel-sheet">
+          <div class="sheet-content">
+            <h3>
+              Methods
+            </h3>
+            <h4>
+              Data Processing
+
+            </h4>
+            <p>
+              Natural language processing requires a text corpus on which to train the linguistic data. To do this, I used congress.gov’s web API to access full-text legislation. These data must be comprehensive; anything not included in the dataset will not be accounted for in the analysis. Therefore, I used the following metrics to pull all relevant legislation that pertained to environmentalism:
+
+            </p>
+            <p>
+              1. Type: legislation
+              <br>
+              2. Congress: all
+              <br>
+
+              3. Status of legislation: Became Law
+              <br>
+
+              4. Policy area: Environmental Policy
+              <br>
+
+            </p>
+            <br>
+
+            <img src="images/leg-per-year.png" width="60%">
+            <br>
+
+            <p>
+              This search yielded 214 bills passed between 1973 to 2025. Notably, this congressional record did not include bills before 1973, thus resulting in a computational blind spot in early 1970s legislation. The full list of federal legislation can be accessed <a href="https://github.com/skylarwalters/hist-1976f/blob/main/code/Legislation.xlsx">here</a>. 
+            </p>
+
+            <p>
+              These texts then needed to be processed for language-learning. Until 1983, these documents were stored as pdf forms in two columns: one that is an annotation and one that is body text. This was a key issue in creating the text corpus, as differentiating between the main text and annotations is an open question in the world of text mining. However, by matching these columns to regex (“regular expressions”) that followed the rough column format, I was able to clean these annotations. After 1983, the text was stored as htm files, which did not face the same problem of column-cleaning. 
+
+            </p>
+            <p>
+              To make the text usable in an NLP context, we further had to process individual words. This included:
+
+            </p>
+
+            <p>
+              1. Removing punctuation<br>
+              2. Separating conjunctions into their constituent words <br>
+              3. Removing “stop words,” or high-frequency, low-meaning words (ex. And, in, the, an, at, a)
+              <br>
+              4. Stemming words, or creating a consistent grammatical form (ex. Bike, biking, biked all become bik)
+              <br>
+              5. Lemmatizing, a more “refined” stemming, that creates a common grammatical form that considers context (e.x., "saw" as a noun stays "saw", but as a verb becomes "see")
+
+            </p>
+
+            <p>
+              These preprocessing steps make text more uniform such that NLP models can recognize patterns in meaning instead of being distracted by surface-level differences like punctuation. They also reduce sparsity in the data by collapsing many grammatical variants and filler words into a smaller, more informative vocabulary, which improves statistical reliability and model performance. Finally, operations like stemming and lemmatization group together words that express the same underlying concept, so that classifiers track ideas (bike/biking/biked) rather than treating every inflected form as unrelated.
+
+            </p>
+<br>
+            <h4>
+              TF-IDF for topic modelling
+
+            </h4>
+
+            <p>
+              The core of NLP is vectorizing language; in other words, creating numerical representations of words, sentences, or documents.
+
+            </p>
+
+            <p>
+              Term frequency-inverse document frequency (TF-IDF) is a classical method for making documents into numerical vectors by weighing words according to how often they appear in a document (term frequency) and how rare it is across all documents in a corpus (inverse document frequency). Thus, if a word is frequent in a given text but rare in others, then it will receive a high TF-IDF score. This is repeated for all words in the corpus vocabulary, creating a numerical vector representation of a document by capturing its distinctive language. 
+
+            </p>
+
+            <p>
+              These vectors can then be used to conduct topic modelling, where a model attempts to discover latent “topics” across documents by looking at word co-occurrence. Algorithms such as Latent Dirichlet Allocation (LDA) treat each document as a mixture of a small number of topics and each topic as a distribution over words, allowing you to summarize large corpora in terms of interpretable themes (for example, “pollution control,” “climate mitigation,” “environmental justice”) and quantify how strongly each document expresses each theme.
+
+            </p>
+            <br>
+
+            <h4>
+              Word2Vec
+            </h4>
+            <p>
+              Word2vec (word to vector) is a family of neural network-based models that learn vector representations, or “embeddings,” for words based on interpreted meaning. This requires training on a large text corpora, during which the model “learns” similar words, then predicting a word from its immediately surrounding context. 
+
+            </p>
+<br>
+            <img src="images/semantic-space.png" >
+<br>
+            <p>
+              This representation is distributional: words that appear in similar contexts end up with similar vectors in a high‑dimensional space, so geometric closeness encodes semantic and syntactic similarity. Because these embeddings capture regularities in language, simple vector arithmetic can reflect analogies (for example, the classic observation that the vector for “king” minus “man” plus “woman” lands near “queen”), which illustrates how relational meaning is encoded in the learned space.
+
+            </p>
+
+            <p>
+              After training a word2vec model, you can compare embeddings for words across documents, or, in this case, years. Since similarity correlates to geometry, we can compute distances (e.g., cosine similarity) between two vectors to see how closely-related they are in the semantic space. In this project, I use these comparisons to quantify how concepts cluster—say, whether “market,” “climate,” and “innovation” are near each other— and track whether words like “communities,” “equity,” or “resilience” move toward different associations over time.
+
+            </p>
+
+            <h4>
+              Interpretation
+            </h4>
+
+            <p>
+              Topic modelling outputs key ideas for a time period; word2vec provides the semantic associations defining said period.
+            </p>
+            <p>
+              Thus, to conduct interpretations of these time periods, I first examined 1) dominant themes of each time period using topic modelling, then 2) examined the semantic space from key topics. This provided X case studies for further investigation and exploration. 
+            </p>
+
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="results" class="story-panel">
+      <div class="panel-image-layer" aria-hidden="true">
+        <div class="panel-image results-art"></div>
+        
+      </div>
+      <div class="panel-sheet-wrap">
+        <article class="panel-sheet">
+          <div class="sheet-content">
+            <h3>Results</h3>
+            <br>
+            
+            <h4>Case study 1: Air Particulates, Acid Rain, and the Ozone Layer</h4>
+
+            <p>
+              Topic modelling revealed “ozone” to be a topic keyword in the 1980s; as a result I examined the semantic role of the word “ozone” across time. Interestingly, ozone appeared only as a legislative keyword— that is, one of the 5000 most prevalent terms— in three time periods: the 1970s, the late 1980s, and the early 1990s, suggesting its role in popular history as a problem addressed relatively quickly. However, its associations rather propose the idea of maturing legal systems for ecological regulation.
+            </p>
+
+            <p>
+              Critically, ozone’s early associations are not with standard pollutants, but with legal terms such as “section” or categorial emissions sources, such as “light-duty” vehicles. This reflects is relatively low status in the world of pollutants: it is merely mentioned next to the larger players; the early embedding space recovers the legal history of ozone as a problem associated with other emissions, before broader public and scientific debates about ozone depletion and atmospheric chemistry are fully translated into legislative language.
+
+            </p>
+
+            <p>
+              In contrast, the role of sulfur dioxide in this embedding space of the 1970s is much more aligned with harm; it is a textbook reconstruction of the first wave of Clean Air Act implementation, being most closely tied to “particulate”, “dioxide”, “oxide”, “ambient”, and “pollutant.” This all echoes the Act’s designation of sulfur dioxide and particulate matter as criteria pollutants subject to National Ambient Air Quality Standards. The cluster around “promulgate”, and “judgement” captures the statutory logic that EPA legislates (“promulgates”) ecological standards around “ambient” concentrations requisite to protect public health and welfare, language central to the 1970 framework and early 1970s rulemakings on sulfur oxides. Thus, in contrast to ozone’s early association with legal-ese fragments, sulfur dioxide’s 1970s embedding is already tightly bound to the vocabulary of ambient standards and pollutant classification, reflecting how SO₂ was one of the paradigmatic pollutants through which the NAAQS architecture was first worked out.
+
+            </p>
+
+            <p>
+              By the 1980s, however, the semantic neighborhoods around ozone is much more similar to that of sulfur dioxide, reflecting a historical phase in which international concern about the ozone layer have matured. The 1979 revision of the Ozone NAAQS, continuing implementation of non‑attainment and attainment classifications under the 1977 amendments, and the lead‑up to the 1987 Montreal Protocol all contributed to a more consolidated technocratic vocabulary around ozone, co‑pollutants, and air‑quality categories. Here, this appears as tighter clustering with terms like “carbon”, “dioxide” “oxides”, “monoxide”, indicating that, by this point, ozone has been fortified as a known pollutant. Historically, the shift in embeddings from emittant to independent problem mirrors the broader arc in which ozone regulation moves from initial statutory construction to a more mature, quantitatively specified regime shaped by both domestic air‑quality law and international ozone‑layer diplomacy.
+
+            </p>
+
+            <p>
+              This is also a key era for the sulfur dioxide terminology. Prior to this, SO₂ was associated with car emissions in defense of breathable air. By the 1980s, however, it shifts into a clearly acid‑rain and industrial‑process register: terms like “acid”, “ammonia”, “production”, “disposition”, “manufacture”, and “facilities” read like the statutory and regulatory response to mounting concern over acid deposition and emissions from power plants, fertilizer production, and other large industrial sources. Here the model is picking up the second phase of sulfur regulation, in which Congress and EPA start to connect SO₂ emissions to broader industrial systems and chemical cycles, anticipating the more formal acid‑rain program of the 1990 amendments. 
+
+            </p>
+
+            <p>
+              Critically, both of these share language of “standards” and “primary” and “secondary” causes by the 1980s. By this time, the regulation has been set, their limits understood.
+
+            </p>
+
+            <p>
+              These particulates each provide a historical narrative of American air quality standards, but they enter that story at different moments and with different levels of conceptual maturity. Taken together, their trajectories show a regulatory pathway that builds a general legal architecture for “pollutants” like sulfur dioxide, and only later comes to treat ozone as an object of concern with its own standards and co‑pollutants. The convergence of ozone and sulfur dioxide’s semantic neighborhoods in the 1980s marks the point at which late twentieth‑century environmentalism stabilizes a language of thresholds, ambient concentrations, and source categories, historically rooted in the specific crises of smog, acid rain, and ozone depletion.
+
+            </p>
+
+
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="story-panel">
+      <div class="panel-image-layer" aria-hidden="true">
+        <div class="panel-image next-art"></div>
+      </div>
+      <div class="panel-sheet-wrap">
+        <article class="panel-sheet">
+          <div class="sheet-content">
+            <h4>Discussion</h4>
+            <p>Finish with limitations, interpretation, broader implications, or the next research direction. A full-page discussion sheet keeps the ending deliberate and essay-like.</p>
+            <p>Below it, the final figure can act as a visual coda. You can also continue after this section with references, acknowledgments, or links to code and data.</p>
+          </div>
+        </article>
+      </div>
+
+    <section id="discussion" class="story-panel">
+      <div class="panel-image-layer" aria-hidden="true">
+        <div class="panel-image discussion-art"></div>
+        
+      </div>
+      <div class="panel-sheet-wrap">
+        <article class="panel-sheet">
+          <div class="sheet-content">
+            <h3>Discussion</h3>
+            <br>
+
+            <P>
+              DISCUSSION
+            </P>
+
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <script>
-    const steps = [...document.querySelectorAll('.step')];
-    const visuals = [...document.querySelectorAll('.visual-item')];
-    const progressBar = document.getElementById('progressBar');
-    const themeToggle = document.querySelector('[data-theme-toggle]');
-    const root = document.documentElement;
-
-    function setActiveStep(index) {
-      steps.forEach((step, i) => {
-        step.classList.toggle('active', i === index);
-      });
-
-      visuals.forEach((visual, i) => {
-        visual.classList.toggle('active', i === index);
-      });
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const index = Number(entry.target.dataset.step);
-          setActiveStep(index);
-        }
-      });
-    }, {
-      root: null,
-      threshold: 0.55
-    });
-
-    steps.forEach(step => observer.observe(step));
-
-    function updateProgress() {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-      progressBar.style.width = `${progress}%`;
-    }
-
-    updateProgress();
-    window.addEventListener('scroll', updateProgress, { passive: true });
-
     (function () {
-      let currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      root.setAttribute('data-theme', currentTheme);
+      const root = document.documentElement;
+      const toggle = document.querySelector('[data-theme-toggle]');
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
 
-      function renderIcon() {
-        themeToggle.innerHTML = currentTheme === 'dark' ? '<span aria-hidden="true">☀</span>' : '<span aria-hidden="true">☾</span>';
-        themeToggle.setAttribute(
-          'aria-label',
-          currentTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
-        );
-      }
+      const updateToggle = () => {
+        toggle.innerHTML = theme === 'dark'
+          ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
+          : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+      };
+      updateToggle();
 
-      renderIcon();
-
-      themeToggle.addEventListener('click', () => {
-        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-theme', currentTheme);
-        renderIcon();
+      toggle.addEventListener('click', () => {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        updateToggle();
       });
-    })();
+
+      const sections = [...document.querySelectorAll('main section[id]')];
+      const navLinks = [...document.querySelectorAll('.toolbar a')];
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          navLinks.forEach((link) => {
+            const active = link.getAttribute('href') === '#' + entry.target.id;
+            if (active) link.setAttribute('aria-current', 'true');
+            else link.removeAttribute('aria-current');
+          });
+        });
+      }, { rootMargin: '-30% 0px -50% 0px', threshold: 0.05 });
+
+      sections.forEach((section) => observer.observe(section));
+    }());
   </script>
 </body>
 </html>
