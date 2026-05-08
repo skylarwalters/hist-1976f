@@ -354,3 +354,60 @@ main {
   .theme-toggle { transition: none; }
   .panel-image { transform: none; }
 }
+
+
+
+a {
+  color:#146019;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+
+}
+
+.citation {
+  position: relative;
+  display: inline;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: #146019;
+  text-underline-offset: 0.14em;
+  cursor: help;
+}
+
+.citation-tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + var(--space-3));
+  transform: translateX(-50%) translateY(0.2rem);
+  z-index: 20;
+
+  width: max-content;
+  max-width: min(30rem, 80vw);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+
+  background: var(--color-sheet);
+  color: var(--color-text);
+  box-shadow: var(--shadow-lg);
+
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: 1.45;
+  letter-spacing: 0;
+  white-space: normal;
+  text-align: left;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+}
+
+.citation:hover .citation-tooltip,
+.citation:focus .citation-tooltip,
+.citation:focus-within .citation-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
